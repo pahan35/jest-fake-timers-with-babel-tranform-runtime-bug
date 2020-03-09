@@ -3,6 +3,6 @@ module.exports = {
     '**/*.test.js',
   ],
   roots: ['<rootDir>/src'],
-  transform: {'^.+\\.[t|j]sx?$': '<rootDir>/js/testing/babelizer.js'},
+  transform: {'^.+\\.js$': '<rootDir>/testenv/babelizer.js'},
   verbose: true
 }
