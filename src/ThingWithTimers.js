@@ -4,6 +4,7 @@ export default class ThingWithTimers {
       let waitingFor = 0
       const interval = setInterval(() => {
         waitingFor += intervalSize
+        console.log({waitingFor})
         if (waitingFor > callAfter) {
           clearInterval(interval)
           resolve()
